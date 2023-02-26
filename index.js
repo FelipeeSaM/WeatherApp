@@ -33,6 +33,7 @@ search.addEventListener('click', () => {
             const description = document.querySelector('.weather-box .description');
             const humidity = document.querySelector('.weather-details .humidity span');
             const wind = document.querySelector('.weather-details .wind span');
+            const pressure = document.querySelector('.weather-details .pressure span');
 
             switch (json.weather[0].main) {
                 case 'Clear':
@@ -62,6 +63,7 @@ search.addEventListener('click', () => {
             temperature.innerHTML = `${parseInt(json.main.temp)}<span> °C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
+            pressure.innerHTML = `${parseInt(json.main.pressure)}`
             wind.innerHTML = `${parseInt(json.wind.speed)} Km/h`;
             
             weatherBox.style.display = '';

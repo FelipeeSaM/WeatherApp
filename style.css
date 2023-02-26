@@ -115,7 +115,8 @@ body {
     margin-top: 30px;
 }
 
-.weather-details .humidity, .weather-details .wind {
+.weather-details .humidity, .weather-details .wind,
+.weather-details .pressure {
     width: 50%;
     height: 100px;
     display: flex;
@@ -125,6 +126,15 @@ body {
 .weather-details .humidity {
     padding-left: 20px;
     justify-content: flex-start;
+}
+
+.weather-details .pressure {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.humidity i, .wind i, .pressure i {
+    padding-right: 10px;
 }
 
 .weather-details .wind {
